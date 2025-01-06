@@ -1,6 +1,7 @@
 """
 Personas, modelos
 """
+
 from collections import OrderedDict
 
 from sqlalchemy import Column, Date, Enum, Integer, String
@@ -32,12 +33,14 @@ class Persona(Base, UniversalMixin):
         ("A.D.(B)", "A.D.(B): Alta Definitiva con Beneficiarios"),
         ("A.D.C.S.", "A.D.C.S: Alta Definitiva Comisionada al Sindicato"),
         ("A.D.SUS", "A.D.SUS: Alta Defininitiva Suspendida"),
+        ("A.S.", "A.S: Asimilado"),
         ("B", "B: Baja"),
         ("C.E.", "C.E: Comisión Especial"),
         ("L.G.", "L.G: Licenia por Gravidez"),
         ("L.S.G.S.", "L.S.G.S: Licencia Sin Goce de Sueldo"),
         ("L.P.O.P.C.", "L.P.O.P.C: Licencia Para Ocupar Puesto de Confianza"),
         ("V", "V: Vacante"),
+        ("P", "P: Pensionado"),
     ]
 
     # Nombre de la tabla
